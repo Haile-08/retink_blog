@@ -13,7 +13,7 @@ function Author() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4545/Blog/get")
+      .get("http://localhost:4547/Blog/get")
       .then(function (res) {
         return res;
       })
