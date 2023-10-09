@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors(allowedOrigins));
 
 //routes
+app.use("/Author", require("./routes/Author"));
 
 //check the connection and server run on the given port
 mongoose.connection.once("open", () => {
