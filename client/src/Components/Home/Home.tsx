@@ -1,8 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import logo from "../../assets/r.png";
 import img from "../../assets/img.png";
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/login");
+  };
+  const handleSignUp = () => {
+    navigate("/signup");
+  };
   return (
     <div className="home">
       <div className="nav">
@@ -10,8 +19,8 @@ function Home() {
           <img src={logo} alt="logo" />
         </div>
         <div className="home-btn">
-          <button>Login</button>
-          <button>Register</button>
+          <button onClick={() => handleLogin()}>Login</button>
+          <button onClick={() => handleSignUp()}>Register</button>
         </div>
       </div>
       <div className="main">
