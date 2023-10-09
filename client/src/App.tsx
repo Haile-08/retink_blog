@@ -5,7 +5,10 @@ import {
 } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import MainLayout from "./Components/MainLayout/MainLayout";
+import Login from "./Components/Login/Login";
+import SignUp from "./Components/SignUp/Signup";
 import "./App.css";
+import Author from "./Components/Author/Author";
 
 function App() {
   function ErrorPage() {
@@ -30,6 +33,18 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
+        },
+        {
+          path: "/signup",
+          element: <SignUp />,
+        },
+        {
+          path: "/author",
+          element: <Author />,
         },
       ],
     },
