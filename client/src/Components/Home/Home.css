@@ -4,6 +4,8 @@
     width: 100vw;
     height: 100vh;
     max-height: auto;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
 }
 .nav {
     display: flex;
