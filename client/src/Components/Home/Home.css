@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    max-height: auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+}
+
+.home-logo {
+    margin-left: 10vw;
+}
+
+.home-btn {
+    margin-right: 10vw;
+}
+
+.home-btn button{
+    margin: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.landing {
+    margin-left: 10vw;
+}
+
+.landing img {
+    width: 30vw;
+    margin-right: 15vw;
+}
+
+.landing-text {
+    margin-right: 10vw;
+}
+
+.landing-text p {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.blog {
+    display: flex;
+    height: 20vh;
+    margin: 10vh 10vw;
+    padding-left: 10vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #e84118;
+    color: #fff;
+    font-family: 'Lato', sans-serif;  
+}
+.blog-title {
+    width: auto;
+}
+
+.blog-title p {
+    font-size: 25px;
+}
