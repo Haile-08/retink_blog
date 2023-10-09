@@ -14,7 +14,7 @@ function Login() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4545/Author/login", {
+      .post("http://localhost:4547/Author/login", {
         email: email,
         password: password,
       })
@@ -24,7 +24,7 @@ function Login() {
       .then(function (resData) {
         dispatch(
           setLogin({
-            user: resData?.data.user,
+            user: resData?.data.author,
             token: resData?.data.token,
           })
         );
