@@ -10,7 +10,7 @@ const handleBlogPost = async (req, res) => {
       author,
     });
     await newBlog.save();
-    const Blogs = await Blog.find({ userid: { $in: userid } });
+    const Blogs = await Blog.find({ author: { $in: author } });
 
     res.status(201).json({ Blogs });
   } catch (err) {
