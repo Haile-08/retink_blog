@@ -11,6 +11,7 @@ import SignUp from "./Components/SignUp/Signup";
 import "./App.css";
 import Author from "./Components/Author/Author";
 import { useSelector } from "react-redux";
+import Post from "./Components/Post/Post";
 
 function App() {
   const isAuth = Boolean(useSelector((state: any) => state.auth.token));
@@ -48,6 +49,10 @@ function App() {
         {
           path: "/author",
           element: isAuth ? <Author /> : <Navigate to="/" />,
+        },
+        {
+          path: "/post",
+          element: isAuth ? <Post /> : <Navigate to="/" />,
         },
       ],
     },

@@ -34,6 +34,11 @@ function Author() {
     console.log("click");
     dispatch(setLogout());
   };
+
+  const handlePost = () => {
+    navigate("/post");
+  };
+
   return (
     <div className="home">
       <div className="nav">
@@ -41,7 +46,7 @@ function Author() {
           <p>Haile</p>
         </div>
         <div className="home-btn">
-          <button>Post</button>
+          <button onClick={() => handlePost()}>Post</button>
           <button onClick={() => handleLogout()}>Logout</button>
         </div>
       </div>
