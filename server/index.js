@@ -23,6 +23,7 @@ app.use(cors(allowedOrigins));
 
 //routes
 app.use("/Author", require("./routes/Author"));
+app.use("/Blog", require("./routes/Blog"));
 
 //check the connection and server run on the given port
 mongoose.connection.once("open", () => {
